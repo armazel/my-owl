@@ -1,0 +1,40 @@
+{
+  "name": "react-boilerplate-ssr",
+  "version": "1.0.0",
+  "description": "SSR services with React 16.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "CLIENT_VERSION=v1.0.0 babel-node src/index.js",
+    "lint": "eslint src"
+  },
+  "author": "Alan Wei",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "dns-prefetch-control": "^0.1.0",
+    "dont-sniff-mimetype": "^1.0.0",
+    "express": "^4.16.3",
+    "hide-powered-by": "^1.0.0",
+    "history": "^4.7.2",
+    "hsts": "^2.1.0",
+    "ienoopen": "^1.0.0",
+    "lodash": "^4.17.10",
+    "morgan": "^1.9.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.3.1",
+    "react-router-config": "^1.0.0-beta.4",
+    "serialize-javascript": "^1.5.0",
+    "x-xss-protection": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-eslint": "^9.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.5.0",
+    "eslint-plugin-node": "^7.0.1"
+  }
+}

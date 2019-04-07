@@ -1,0 +1,388 @@
+@import '../../styles/helpers';
+
+.body{
+  position: relative;
+  display: flex;
+  height: 1000px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hover-area{
+  width: 50%;
+  height: 100vh;
+  z-index: 10;
+}
+.owl {
+  position: absolute;
+  top: 10%;
+  width: 500px;
+}
+.owl-head {
+  width: 500px;
+  height: 300px;
+	background: #aad3fb;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.eye {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 210px;
+  height: 210px;
+	background: white;
+  border: 9px solid black;
+  -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.left_eye {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.left_eye .pupil {
+  width: 120px;
+  height: 120px;
+  background: black;
+  -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+
+.left_eye .pupil::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background: white;
+  -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+  border-radius: 50%;
+  left: 45%;
+  top: 40%;
+}
+
+.right_eye {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+
+.right_eye .pupil {
+  width: 120px;
+  height: 120px;
+  background: black;
+  -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+
+.right_eye .pupil::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background: white;
+  -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 40%;
+}
+
+.nouse_block {
+  position: absolute;
+  top: 68%;
+  left: 39%;
+  transition: all 1s ease;
+}
+
+.nouse {
+  background: transparent;
+  width: 0;
+    height: 0;
+    border-top: 80px solid #fcf8cb;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    transition: all 1s ease;
+}
+.nouse::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0;
+  width: 0; 
+  height: 0;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 60px solid #fcf8cb;
+  bottom: 100%;
+  left: 0%;
+}
+
+.ear_left{
+  position: absolute;
+    border-bottom: 50px solid #aad3fb;
+    border-top: 50px solid #aad3fb;
+    border-left: 50px solid #aad3fb;
+    border-right: 50px solid #aad3fb;
+    border-left: 5px solid transparent;
+    border-top: 0 solid transparent;
+    border-left: 10x solid transparent;
+    transform: rotate(-15deg);
+    height: 0;
+    width: 90px;
+    top: -7%;
+    left: 15%;
+    z-index: 0;
+    transition: all 1s ease;
+}
+.ear_left::before {
+  content: "";
+  position: absolute;
+  background: #fcf8cb;
+  width: 10px;
+  height: 20px;
+  top: 15px;
+  left: 100%;
+  transform: rotate(15deg);
+}
+
+.ear_left::after {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0;
+  border-bottom: 86px solid #aad3fb;
+  border-left: 86px solid transparent;
+  top: -85px;
+  left: -1px;
+}
+
+.ear_right{
+  position: absolute;
+    border-bottom: 50px solid #aad3fb;
+    border-top: 50px solid #aad3fb;
+    border-left: 50px solid #aad3fb;
+    border-right: 50px solid #aad3fb;
+    border-left: 5px solid transparent;
+    border-top: 0 solid transparent;
+    border-right: 10x solid transparent;
+    transform: rotate(15deg);
+    height: 0;
+    width: 90px;
+    top: -7%;
+    right: 15%;
+    z-index: 0;
+    transition: all 1s ease;
+}
+.ear_right::before {
+  content: "";
+  position: absolute;
+  background: #fcf8cb;
+  width: 12px;
+  height: 20px;
+  top: 15px;
+  left: 100%;
+  transform: rotate(-15deg);
+}
+
+.ear_right::after {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0;
+  border-bottom: 86px solid #aad3fb;
+  border-right: 86px solid transparent;
+  top: -85px;
+}
+
+
+.owl-body {
+  position: absolute;
+  background: #7bb7f5;
+  height: 600px;
+  width: 470px;
+  border-radius: 50%;
+  top: 25%;
+    z-index: -4;
+    left: 2%;
+}
+
+.wing{
+  background: #aad3fb;
+  height: 400px;
+  width: 250px;
+  position: absolute;
+  border-radius: 50%; 
+}
+.wing-left{
+  top: 70%;
+  left: -5%;
+  transform: rotate(30deg);
+  z-index: -2;
+  transition: all 1s ease;
+}
+.wing-right{
+  top: 70%;
+  right: -5%;
+  transform: rotate(-30deg);
+  z-index: -2;
+  transition: all 1s ease;
+}
+
+.owl-second-body{
+  background: #499bed;
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  border-radius: 50%;
+  top: 43%;
+  z-index: -4;
+  left: 9%;
+  z-index: -1;
+}
+
+.freckles-block-first{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 60px;
+  z-index: -1;
+  top: 50%;
+}
+
+.freckles-block-first .freckles.second{
+  position: relative;
+  top: -15%;
+}
+
+.freckles-block-first .freckles.third{
+  position: relative;
+  top: -10%;
+}
+
+.freckles-block-second{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 60px;
+  z-index: -1;
+  top: 65%;
+}
+
+.freckles {
+  background: #fcf8cb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+
+.feet {
+  background: #512e0e;
+  width: 25px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.feets-block-first{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 60px;
+  top: 95%;
+  left: 25%;
+  transition: all 1s ease;
+}
+
+.feets-block-first .first{
+  position: relative;
+  left: 7px;
+}
+
+.feets-block-first .third{
+  position: relative;
+  right: 7px;
+  transform: rotate(-9deg);
+}
+
+.feets-block-second{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 60px;
+  top: 95%;
+  right: 25%;
+  transition: all 1s ease;
+}
+
+.feets-block-second .first{
+  position: relative;
+  left: 7px;
+  transform: rotate(9deg);
+}
+
+.feets-block-second .third{
+  position: relative;
+  top: -5px;
+  right: 7px;
+  transform: rotate(-9deg);
+}
+
+.key {
+  position: fixed;
+  display: none;
+  width: 100px;
+  height: 120px;
+  top: 30%;
+  right: 15%;
+}
+
+//ANIMATE
+.hover-area:hover {
+  cursor: pointer;
+}
+.hover-area:hover .key {
+  display: block;
+}
+
+.hover-area:hover .pupil {
+  width: 80px;
+  height: 80px;
+}
+
+.hover-area:hover .ear_right,
+.hover-area:hover .ear_left {
+  top: 0%;
+}
+
+.hover-area:hover .wing-left{
+  transform: rotate(50deg);
+}
+
+.hover-area:hover .wing-right{
+  transform: rotate(-50deg);
+}
+
+.hover-area:hover .feets-block-first{
+  transform: rotate(15deg);
+}
+
+.hover-area:hover .feets-block-second{
+  transform: rotate(-15deg);
+}
